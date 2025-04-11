@@ -1,0 +1,66 @@
+body {
+    background-color: black;
+    color: white;
+}
+.main-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+#clock {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: yellow;
+    text-shadow: 2px 2px 4px black;
+}
+#weather {
+    font-size: 18px;
+    margin-top: 5px;
+    color: white;
+}
+.news-ticker, .news-ticker1 {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.news-ticker {
+    background: white;
+    font-size: 60px;
+    }
+.news-ticker1 {
+    background: red;
+    color: white;
+    max-height: 50px;
+
+}
+.news-ticker .car{
+    font-size: 60px;
+}
+.news-ticker .track1{
+    background-color: black ;
+    height: 60px;
+}
+.news-ticker .track2{
+    background-color: black ;
+    height: 60px;
+
+}
+.news-ticker span, .news-ticker1 span {
+    display: inline-block;
+    size: 60px;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+.news-ticker span {
+    animation-duration: 6s;
+}
+@keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
